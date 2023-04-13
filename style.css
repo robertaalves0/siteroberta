@@ -1,0 +1,123 @@
+:root{
+    --corfundo: rgb(255, 255, 255); /*Cor de fundo do site*/
+    --cortexto: rgb(22, 22, 22); /*Cor padrão da fonte do site*/
+    --corprincipal: #27668C;
+    --corsecundaria: #20818C;
+    --cordestaque: #F29F05;
+
+    --larguramaxima: 900px; /*Largura máxima do site*/
+    --larguraminima: 250px; /*Largura mínima do site*/
+}
+
+/*  Segunda Opção
+    --corprincipal: #401430;
+    --corsecundaria: #A60F55;
+    --cordestaque: #F2E857;
+*/
+
+*{
+    margin: 0; /*O margin retira as margens do site*/
+    padding: 0; /*Retira as margens internas*/
+}
+
+body{
+    background-color: var(--corfundo); /*Cor de fundo*/
+    color: var(--cortexto); /*Cor da fonte*/
+}
+
+header, main, footer{
+    max-width: var(--larguramaxima); /*Determina a largura MÁXIMA da página*/
+    min-width: var(--larguraminima); /*Determina a largura MÍNIMA da página*/
+    padding: 20px; /*Controla as margens INTERNAS*/
+    margin: auto; /*Centraliza as sessões no meio*/
+    position: relative; /*Deixar os elementos internos com posicionamento relativo e eles*/
+}
+
+footer{
+    background-color: var(--corprincipal);
+}
+
+footer>p{
+    color: var(--corfundo);
+}
+
+h1, h2, h3{
+    color: var(--cordestaque);
+}
+
+span{
+    color: var(--cordestaque);
+}
+
+.social{
+    width: 35px; /*Largura dos icones*/
+    filter: invert(1) opacity(.6); /*Filtro de cor*/
+}
+
+.social:hover{
+    filter: invert(1) opacity(1) sepia(1);
+}
+
+#capa{
+    width: 100%; /*Largura*/
+    height: 300px; /*Altura*/
+    background-image: url('images/bg-abstrato.jpg'); /*Define a imagem de fundo*/
+    background-repeat: no-repeat; /*Argumento para não repetir a imagem*/
+    background-position: 0px 0px; /*POSICIONA a imagem no fundo atravez dos eixos X e Y*/
+    background-size: cover; /*Ajusta o tamanho da imagem*/
+    display: flex; /*Deixa os elementos filhos flexiveis/moveis*/
+    flex-direction: column; /*Posiciona um elemento abaixo do outro*/
+    justify-content: center; /*Alinha no centro vertical*/
+    align-items: center; /* Alinha no centro horizontal*/
+}
+
+#capa>h1{
+    color: var(--cordestaque);
+}
+
+#capa>p{
+    color: var(--corfundo);
+}
+
+#sociais{
+    width: 170px; /*Largura*/
+    position: absolute; /*Posição em relação ao elemto pai*/
+    right: 40px; /*Distanciamento da direita*/
+    top: 40px; /*Distanciamento do topo*/
+    display: flex; 
+    justify-content: space-between;
+}
+
+#fotoperfil{
+    width: 120px;
+    position: absolute;
+    left: 50px;
+    top: 260px;
+}
+
+/*MENU*/
+nav{
+    display: flex; /*Deixa os itens internos soltos na horizontal*/
+    justify-content: center;
+}
+
+#menu{
+    width: 120px;
+    display: flex; /*Deixa os itens internos soltos na horizontal*/
+    justify-content: space-between; /*Distribui horizontalmente os elementos internos*/
+}
+
+.menu{
+    color: var(--corprincipal); /*Muda a cor do link*/
+    text-decoration: none; /*Retira o sublinhado do texto*/
+    font-size: 1.3em; /*Muda o tamanho da fonte*/
+    padding: 4px 15px; /*Margem interna do botão*/
+    
+}
+
+.menu:hover{
+    color: var(--cortexto); /*Cor*/
+    background-color: var(--cordestaque); /*Cor de fundo*/
+    border-radius: 5px; /*Arredonda os cantos*/
+    box-shadow: 3px 3px 3px black; /*INICIAR A PARTI DAQUI*/
+}
