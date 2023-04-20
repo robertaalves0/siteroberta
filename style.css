@@ -79,7 +79,7 @@ span{
     color: var(--corfundo);
 }
 
-#sociais{
+#social{
     width: 170px; /*Largura*/
     position: absolute; /*Posição em relação ao elemto pai*/
     right: 40px; /*Distanciamento da direita*/
