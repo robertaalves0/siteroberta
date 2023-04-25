@@ -1,7 +1,7 @@
 :root{
     --corfundo: rgb(255, 255, 255); /*Cor de fundo do site*/
     --cortexto: rgb(22, 22, 22); /*Cor padrão da fonte do site*/
-    --corprincipal: #27668C;
+    --corprincipal: #084b26;
     --corsecundaria: #20818C;
     --cordestaque: #F29F05;
 
@@ -61,8 +61,8 @@ span{
 #capa{
     width: 100%; /*Largura*/
     height: 300px; /*Altura*/
-    background-image: url('images/bg-abstrato.jpg'); /*Define a imagem de fundo*/
-    background-repeat: no-repeat; /*Argumento para não repetir a imagem*/
+    background-image: url('capa3.jfif'); /*Define a imagem de fundo*/
+    background-repeat: no-rifepeat; /*Argumento para não repetir a imagem*/
     background-position: 0px 0px; /*POSICIONA a imagem no fundo atravez dos eixos X e Y*/
     background-size: cover; /*Ajusta o tamanho da imagem*/
     display: flex; /*Deixa os elementos filhos flexiveis/moveis*/
