@@ -93,6 +93,7 @@ span{
     position: absolute;
     left: 50px;
     top: 260px;
+    border-radius: 50%; /*Foto redonda*/
 }
 
 /*MENU*/
@@ -121,3 +122,6 @@ nav{
     border-radius: 5px; /*Arredonda os cantos*/
     box-shadow: 3px 3px 3px black; /*INICIAR A PARTI DAQUI*/
 }
+
+
+ 
